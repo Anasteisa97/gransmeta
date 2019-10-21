@@ -11,6 +11,36 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('./files/fonts/OpenSansBold/OpenSans-Bold.eot');
+  src: url('./files/fonts/OpenSansBold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/OpenSansBold/OpenSans-Bold.woff') format('woff'),
+  url('./files/fonts/OpenSansBold/OpenSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url('./files/fonts/OpenSansSemiBold/OpenSans-SemiBold.eot');
+  src: url('./files/fonts/OpenSansSemiBold/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/OpenSansSemiBold/OpenSans-SemiBold.woff') format('woff'),
+  url('./files/fonts/OpenSansSemiBold/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('./files/fonts/OpenSansRegular/OpenSans-Regular.eot');
+  src: url('./files/fonts/OpenSansRegular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/OpenSansRegular/OpenSans-Regular.woff') format('woff'),
+  url('./files/fonts/OpenSansRegular/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $def-color: #363B6A;
 
 *{
