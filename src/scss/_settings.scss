@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic-ext');
 
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('./files/fonts/MyriadPro/MyriadPro-Regular.eot');
+  src: url('./files/fonts/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/MyriadPro/MyriadPro-Regular.woff') format('woff'),
+  url('./files/fonts/MyriadPro/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $def-color: #363B6A;
 
 *{
