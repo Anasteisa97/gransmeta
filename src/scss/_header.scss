@@ -1,7 +1,7 @@
 #headering{
   //background: url("../files/imgs/inner.png") center no-repeat;
   width: 100%;
-  background-size: cover;
+  background-size: cover!important;
 
   .container{
     max-width: 1440px;
@@ -32,14 +32,10 @@
   }
 
   .nav{
-    //padding: 45px 20px;
 
     &__item:hover:after,
     &__item.active:after {
       opacity: 1;
-      //margin-top: 9px;
-      //top: 9px;
-
     }
 
     &__link{
@@ -71,22 +67,6 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
-
-       /* &::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 3px;
-        position: absolute;
-          bottom: 0;
-          left: 0;
-        background-color: #007dff;
-        opacity: 0;
-      }*/
-
-      //&:hover::after{
-      //  opacity: 1;
-      //}
 
       &:hover .nav__link::after{
         opacity: 1;

@@ -13,7 +13,7 @@
   }
 
   &__wrapper{
-    padding: 70px 0;
+    margin-bottom: 120px;
   }
 
   &__row{
@@ -30,14 +30,19 @@
         order: 2;
       }
     }
+
+    &:last-child{
+      height: 50%;
+    }
   }
 
   &__item{
     width: 100%;
     padding: 0;
+    position: relative;
 
     &-box{
-      width: 95%;
+      width: 92%;
       height: 100px;
       border: 2px solid #007dff;
       display: flex;
@@ -46,40 +51,59 @@
       position: relative;
       padding-left: 23px;
       padding-right: 23px;
+      margin: 0 20px;
+
+      &.before-left{
+
+        &::before{
+          left: -30px;
+          border-radius: 5px 0 0 5px ;
+        }
+      }
 
       &:hover{
         background: #c5ddf6;
       }
-      
-   /*   &_click{
-        .how-choose__item-box::before{
-          background: #f8484f;
+
+      &_after{
+        display: none;
+        padding: 18px 16px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+
+        p{
+          color: white;
+          font-size: 16px;
+          font-family: 'Open Sans Regular';
         }
-      }*/
+
+        img{
+          margin: 15px auto 0;
+        }
+      }
 
       &_after_click{
-        width: 95%;
-        height: 200px;
-        display: flex;
+        display: block;
+        width: 92%;
+        //height: 200px;
         align-items: center;
         justify-content: center;
         background: #007dff;
         position: absolute;
-        z-index: 1;
+        z-index: 3;
+        margin: 0 20px;
       }
 
     &::before{
       content: "";
       display: block;
       background: #007dff;
-      width: 110%;
+      width: 107%;
       height: 10px;
       position: absolute;
       top: -10px;
       max-width: none;
       left: -2px;
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
+      border-radius: 0 5px 5px 0;
       }
     }
 
@@ -91,6 +115,10 @@
       color: #494949;
     }
 
+    &-arrow{
+      position: absolute;
+    }
+
     &_top{
       align-self: flex-start;
     }
@@ -99,7 +127,7 @@
       align-self: flex-end;
     }
 
-    img{
+    &-icon{
       margin: 2px auto 12px;
 
       &::after{
@@ -111,5 +139,100 @@
       }
     }
 
+    &-arrow{
+
+      bottom: -19px;
+
+      &.right{
+        right: -98px;
+      }
+
+      &.left{
+        left: -79px;
+      }
+    }
   }
 }
+
+#packages{
+
+  .container{
+    max-width: 1440px;
+  }
+}
+
+.packages-item{
+
+  &__title{
+    background: #125ac6;
+    padding: 15px;
+    margin-bottom: 30px;
+
+    &-text{
+      text-align: center;
+      color: #ffffff;
+      font-size: 20px;
+      font-family: 'Istok Web', sans-serif;
+      text-transform: uppercase;
+    }
+  }
+
+  &__info{
+    width: 945px;
+    margin: 0 auto;
+    border: 2px solid #007dff;
+
+    .row{
+      margin: 0;
+    }
+
+    &-block{
+
+
+      &.blue{
+        background: #007dff;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      &.white{
+        display: flex;
+        padding: 20px auto;
+      }
+
+      .img-diagram{
+        margin-left: -34px;
+        align-self: center;
+      }
+
+      p{
+        font-family: 'Open Sans Regular';
+        font-size: 16px;
+      }
+
+      &-text{
+
+        &.blue{
+          color: #007dff;
+          font-family: 'Open Sans Semibold';
+          align-self: center;
+        }
+
+        &.white{
+          color: white;
+        }
+      }
+
+      &-program{
+        position: relative;
+
+        img{
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+

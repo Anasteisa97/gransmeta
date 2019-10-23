@@ -53,7 +53,7 @@ $def-color: #363B6A;
 body{
   display: flex;
   flex-direction: column;
-  //background-color: #E5E5E5;
+  background-color: #e8eef5;
 }
 
 html, body{
@@ -106,7 +106,6 @@ p, span, a{
   text-decoration: none;
 
   &:hover{
-    color: $def-color;
     text-decoration: none;
   }
 }
@@ -181,6 +180,7 @@ input[type="submit"]{
     color: #494949;
     font-size: 36px;
     text-align: center;
+    margin-bottom: 55px;
   }
 }
 
