@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
 
   console.log('YEP');
@@ -16,8 +14,3 @@ $(document).ready(function () {
   });
 
 });
-
-
-
-
-
