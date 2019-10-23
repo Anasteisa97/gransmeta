@@ -1,4 +1,4 @@
-<header class="header" id="headering" style="background-image: url('../files/imgs/inner.png');">
+<header class="header" id="headering" style="background-image: url('./files/imgs/inner.png');">
 
   <div class="header-top">
 
@@ -6,31 +6,31 @@
 
       <div class="row">
         <!--НЕ ИСПОЛЬЗОВАТЬ КЛАССЫ ДЛЯ БУТРСАП СТИЛЕЙ, КОГДА ЭТО ВОЗМОЖНО, СЕМАНТИЧЕСКИЙ ТЕГ NAV-->
-        <div class="col-lg-6 nav align-items-center">
+        <nav class="col-lg-6 nav align-items-center">
 
           <!--CMS ВЫВОДЯТ МЕН. ПО-ДРУГОМУ-->
 
           <a href="#about" class="nav__item">
             <img src="files/imgs/icons/home.png" alt="" class="nav__item-icon">
-            <p class="nav__link">Главная</p>
+            <p class="nav__item-link">Главная</p>
           </a>
 
           <a href="#" class="nav__item">
             <img src="files/imgs/icons/prices.png" alt="" class="nav__item-icon">
-            <p class="nav__link" data-scroll="#service">Цены</p>
+            <p class="nav__item-link" data-scroll="#service">Цены</p>
           </a>
 
           <a href="#" class="nav__item">
             <img src="files/imgs/icons/requests.png" alt="" class="nav__item-icon">
-            <p class="nav__link" data-scroll="#design">Отзывы</p>
+            <p class="nav__item-link" data-scroll="#design">Отзывы</p>
           </a>
 
           <a href="#" class="nav__item">
             <img src="files/imgs/icons/contacts.png" alt="" class="nav__item-icon">
-            <p class="nav__link" data-scroll="#work">Контакты</p>
+            <p class="nav__item-link" data-scroll="#work">Контакты</p>
           </a>
 
-        </div>
+        </nav>
 
         <div class="col-lg-6 header-right">
           <!--ТЕЛЕФОНЫ И МЫЛО ДЕЛАЮТСЯ ССЫЛКАМИ tel:+78412516161-->
@@ -42,7 +42,7 @@
                 <img src="files/imgs/icons/address.png" alt="" class="nav__icon">
                 <div class="address__text">
                   <!--ССЫЛКИ ЛУЧШЕ ВСЕГО СТАВИТЬ ТОЛЬКО ТОГДА, КОГДА ЭТО БУДЕТ ПЕРЕХОД НА ДРУГУЮ СТРАНИЦУ-->
-                  <a href="#" class="address__text_top">г. Пенза,</a>
+                  <span class="address__text_top">г. Пенза,</span>
                   <p class="address__text_bottom">ул. Пушкина, 3, офис 410</p>
                 </div>
             </div>

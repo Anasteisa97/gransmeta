@@ -24,37 +24,7 @@
 
 .section-title{
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 33px;
-
-  &__line{
-    height: 2px;
-    width: 48%;
-    background: #007dff;
-    margin-right: 0;
-    margin-left: 0;
-
-    &_right{
-      right: 0;
-    }
-  }
-
-  &__img{
-    margin: 0 auto;
-  }
-
-  &-text{
-    text-transform: uppercase;
-    color: #494949;
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 55px;
-  }
-}
-
-.section-title-2{
 
   &__photo{
     position: relative;
@@ -67,20 +37,28 @@
       content: '';
       width: calc(50% - 20px - 24px);
       height: 2px;
-      background-color: red;
+      background: #007dff;
     }
 
     &::after{
       display: block;
       content: '';
       height: 2px;
-      background-color: red;
+      background: #007dff;
       width: calc(50% - 20px - 24px);
     }
 
     img{
 
     }
+  }
+
+  &-text{
+    text-transform: uppercase;
+    color: #494949;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 55px;
   }
 }
 
@@ -135,7 +113,7 @@
 
       //ЭТО ПСЕВДОЭЛЕМЕНТ
       &::placeholder{
-        color: RED;
+        color: white;
       }
 
       box-shadow: 0 3px 3px rgba(255,255,255,0.2);
