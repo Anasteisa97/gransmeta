@@ -1,7 +1,8 @@
 #headering{
-  //background: url("../files/imgs/inner.png") center no-repeat;
   width: 100%;
-  background-size: cover!important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   .container{
     max-width: 1440px;
@@ -14,6 +15,7 @@
 }*/
 
 .header{
+
   &-top{
     height: 107px;
     display: flex;
@@ -26,36 +28,11 @@
     z-index: 1;
     right: 0;
     left: 0;
-
     //transform: translate3d(0,0,0);
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
   }
 
   .nav{
-
-    &__item:hover:after,
-    &__item.active:after {
-      opacity: 1;
-    }
-
-    &__link{
-
-      padding-bottom: 9px;
-
-      &::after {
-        //translate3d(0px, 10px, 0px);
-        content: "";
-        display: block;
-        width: 100%;
-        height: 3px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: #007dff;
-        opacity: 0;
-      }
-
-    }
 
     &__item{
       margin-right: 67px;
@@ -79,7 +56,35 @@
       &-icon{
         padding: 19px;
       }
+
+      &__link{
+
+        padding-bottom: 9px;
+
+        &::after {
+          //translate3d(0px, 10px, 0px);
+          content: "";
+          display: block;
+          width: 100%;
+          height: 3px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #007dff;
+          opacity: 0;
+        }
+
+      }
+
+      //ЛИШНЕЕ НАДО УДАЛЯТЬ
+
+      &:hover:after,
+      &.active:after {
+        opacity: 1;
+      }
     }
+
+
 
     &__icon{
       margin-right: 15px;
@@ -159,75 +164,14 @@
         }
       }
     }
-  }
-}
 
-.form{
-  position: absolute;
-  min-height: 210px;
-  background: rgba(0,80,200,.6);
-
-  //background: #0050c8;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  //opacity: .6;
-  //display: flex;
-  justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 38px;
-
-  &-wrapper{
-    width: 850px;
-    margin: 0 auto;
-  }
-
-  &__text{
-    text-align: center;
-    width: 615px;
-    color: white;
-    font-size: 20px;
-    font-family: 'Istok Web', sans-serif;
-    margin: 0 auto;
-
-    &:hover{
-      color: white;
-    }
-  }
-
-  &__input{
-    //width: 850px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 32px;
-
-    &-field{
-      width: 265px;
-      height: 35px;
-      background: transparent;
-      font-size: 19px;
-      border: 3px solid white;
-      padding-left: 15px;
-      color: white;
-
-      box-shadow: 0 3px 3px rgba(255,255,255,0.2);
-    }
-
-  }
-
-  &__checkbox{
-    margin-left: 93px;
-    margin-top: 20px;
-
-    p{
-      color: white;
-      font-size: 16px;
-      font-family: 'Open Sans Regular';
+    .def-form{
+      background: rgba(0,80,200,.6);
     }
   }
 }
+
+
 
 
 

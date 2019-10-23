@@ -1,0 +1,156 @@
+.btn{
+  width: 265px;
+  height: 35px;
+  background-color: #125ac6;
+  display: block;
+  content: "";
+  vertical-align: center;
+  font-family: 'Open Sans Regular';
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  //border: 2px solid white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  outline: none;
+  color: #ffffff;
+
+
+}
+
+.btn:hover{
+  color: #ffffff;
+}
+
+.section-title{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 33px;
+
+  &__line{
+    height: 2px;
+    width: 48%;
+    background: #007dff;
+    margin-right: 0;
+    margin-left: 0;
+
+    &_right{
+      right: 0;
+    }
+  }
+
+  &__img{
+    margin: 0 auto;
+  }
+
+  &-text{
+    text-transform: uppercase;
+    color: #494949;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+}
+
+.section-title-2{
+
+  &__photo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before{
+      display: block;
+      content: '';
+      width: calc(50% - 20px - 24px);
+      height: 2px;
+      background-color: red;
+    }
+
+    &::after{
+      display: block;
+      content: '';
+      height: 2px;
+      background-color: red;
+      width: calc(50% - 20px - 24px);
+    }
+
+    img{
+
+    }
+  }
+}
+
+.def-form{
+  position: absolute;
+  min-height: 210px;
+
+  //background: #0050c8;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  //opacity: .6;
+  //display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 38px;
+
+  &-wrapper{
+    width: 850px;
+    margin: 0 auto;
+  }
+
+  &__text{
+    text-align: center;
+    width: 615px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Istok Web', sans-serif;
+    margin: 0 auto;
+
+    &:hover{
+      color: white;
+    }
+  }
+
+  &__input{
+    //width: 850px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 32px;
+
+    &-field{
+      width: 265px;
+      height: 35px;
+      background: transparent;
+      font-size: 19px;
+      border: 3px solid white;
+      padding-left: 15px;
+      color: white;
+
+      //ЭТО ПСЕВДОЭЛЕМЕНТ
+      &::placeholder{
+        color: RED;
+      }
+
+      box-shadow: 0 3px 3px rgba(255,255,255,0.2);
+    }
+
+  }
+
+  &__checkbox{
+    margin-left: 93px;
+    margin-top: 20px;
+
+    p{
+      color: white;
+      font-size: 16px;
+      font-family: 'Open Sans Regular';
+    }
+  }
+}

@@ -128,61 +128,6 @@ input[type="submit"]{
   padding: 1px 5px;
 }
 
-.btn{
-  width: 265px;
-  height: 35px;
-  background-color: #125ac6;
-  display: block;
-  content: "";
-  vertical-align: center;
-  font-family: 'Open Sans Regular';
-  font-size: 18px;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-  //border: 2px solid white;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  outline: none;
-  color: #ffffff;
-
-
-}
-
-.btn:hover{
-  color: #ffffff;
-}
-
-.section-title{
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 33px;
-
-  &__line{
-    height: 2px;
-    width: 48%;
-    background: #007dff;
-    margin-right: 0;
-    margin-left: 0;
-
-    &_right{
-      right: 0;
-    }
-  }
-
-  &__img{
-    margin: 0 auto;
-  }
-
-  &-text{
-    text-transform: uppercase;
-    color: #494949;
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 55px;
-  }
-}
 
 
 
