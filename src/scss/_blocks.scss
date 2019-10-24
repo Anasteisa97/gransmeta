@@ -1,20 +1,18 @@
 .btn{
   width: 265px;
-  height: 35px;
+  height: 37px;
   background-color: #125ac6;
   display: block;
   content: "";
   vertical-align: center;
   font-family: 'Open Sans Regular';
   font-size: 18px;
-  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  //border: 2px solid white;
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
   outline: none;
   color: #ffffff;
-
+  border-radius: 0;
 
 }
 
@@ -84,10 +82,10 @@
 
   &__text{
     text-align: center;
-    width: 615px;
+    width: 630px;
     color: white;
     font-size: 20px;
-    font-family: 'Istok Web', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
 
     &:hover{
@@ -96,7 +94,6 @@
   }
 
   &__input{
-    //width: 850px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -104,7 +101,7 @@
 
     &-field{
       width: 265px;
-      height: 35px;
+      height: 37px;
       background: transparent;
       font-size: 19px;
       border: 3px solid white;
@@ -116,7 +113,14 @@
         color: white;
       }
 
-      box-shadow: 0 3px 3px rgba(255,255,255,0.2);
+      &:hover{
+        box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.6);
+      }
+
+      &:active{
+        outline: none;
+        box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.6);
+      }
     }
 
   }
