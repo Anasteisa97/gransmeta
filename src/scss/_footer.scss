@@ -46,7 +46,7 @@
         justify-content: center;
 
         a{
-
+          transition: .5s;
           border: 5px solid #d0ddeb;
           margin-right: 30px;
           border-radius: 50%;
@@ -66,6 +66,8 @@
 
             & path{
               fill: #007dff;
+              transition: .5s;
+
             }
           }
 

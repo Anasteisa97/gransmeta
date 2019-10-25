@@ -102,9 +102,9 @@
       &_top{
         font-size: 18px;
         color: #f8484f;
-        text-decoration: #f8484f dashed;
-        border-bottom: #f8484f;
         font-family: 'Open Sans Regular';
+        border-bottom: 2px dashed #f8484f;
+        line-height: 1.5;
 
       }
       &_bottom{
