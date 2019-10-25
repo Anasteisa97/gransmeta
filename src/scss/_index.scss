@@ -55,13 +55,18 @@
       &.before-left{
 
         &::before{
-          left: -30px;
+          left: -28px;
           border-radius: 5px 0 0 5px ;
+          top: -10;
         }
       }
 
       &:hover{
         background: #c5ddf6;
+
+        &::before{
+          background: #f8484f;
+        }
       }
 
       &_after{
@@ -98,10 +103,10 @@
         content: "";
         display: block;
         background: #007dff;
-        width: 107%;
+        width: calc(100% + 30px);
         height: 10px;
         position: absolute;
-        top: -10px;
+        top: -9px;
         max-width: none;
         left: -2px;
         border-radius: 0 5px 5px 0;
@@ -376,5 +381,27 @@
 
   .def-form__text{
     font-size: 26px;
+  }
+}
+
+.about{
+
+  padding-top: 120px;
+
+  &__wrapper{
+
+    margin-bottom: 120px;
+
+    &-img{
+      background: url('./files/imgs/device.png');
+      width: 1077px;
+      margin: 0 auto;
+      max-width: 100%;
+      padding: 35px 118px 71px 124px;
+
+      iframe{
+        max-width: 100%;
+      }
+    }
   }
 }

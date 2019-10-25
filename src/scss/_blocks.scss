@@ -63,14 +63,9 @@
 .def-form{
   position: absolute;
   min-height: 210px;
-
-  //background: #0050c8;
   bottom: 0;
   right: 0;
   left: 0;
-  width: 100%;
-  //opacity: .6;
-  //display: flex;
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 38px;
@@ -104,7 +99,7 @@
       height: 37px;
       background: transparent;
       font-size: 19px;
-      border: 3px solid white;
+      border: 2px solid white;
       padding-left: 15px;
       color: white;
 

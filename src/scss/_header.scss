@@ -9,11 +9,6 @@
   }
 }
 
-/*.nav__item:hover:after,
-.nav__item.active:after {
-  opacity: 1;
-}*/
-
 .header{
 
   &-top{
@@ -22,13 +17,10 @@
     align-items: center;
     position: absolute;
     top: 0;
-    //background: white;
     background: rgba(255,255,255,.7);
-    //opacity: .7;
     z-index: 1;
     right: 0;
     left: 0;
-    //transform: translate3d(0,0,0);
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
   }
 
@@ -106,6 +98,7 @@
     width: 50%;
 
     &__text{
+
       &_top{
         font-size: 18px;
         color: #f8484f;
