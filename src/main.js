@@ -23,4 +23,35 @@ $(document).ready(function () {
     $('.form-call').fadeOut();
   });
 
+  $("#owl-carousel-1").owlCarousel({
+
+    loop: true,
+    nav: true,
+    dots: false,
+    center: true,
+    /*autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,*/
+    slideBy: 2,
+    stagePadding: 0,
+    responsive:{
+      0:{
+        items:1
+      },
+      750:{
+        items:3
+      },
+    }
+  });
+
+  $("#owl-carousel-2").owlCarousel({
+
+    loop: true,
+    nav: true,
+    dots: false,
+    //center: true,
+    items:1
+  });
+
+
 });

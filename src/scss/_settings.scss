@@ -12,6 +12,36 @@
 }
 
 @font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url('./files/fonts/SourceSansProRegular/SourceSansPro-Regular.eot');
+  src: url('./files/fonts/SourceSansProRegular/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/SourceSansProRegular/SourceSansPro-Regular.woff') format('woff'),
+  url('./files/fonts/SourceSansProRegular/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Istok Web Regular';
+  src: url('./files/fonts/IstokWebRegular/IstokWeb-Regular.eot');
+  src: url('./files/fonts/IstokWebRegular/IstokWeb-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/IstokWebRegular/IstokWeb-Regular.woff') format('woff'),
+  url('./files/fonts/IstokWebRegular/IstokWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Istok Web Italic';
+  src: url('./files/fonts/IstokWebItalic/IstokWeb-Italic.eot');
+  src: url('./files/fonts/IstokWebItalic/IstokWeb-Italic.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/IstokWebItalic/IstokWeb-Italic.woff') format('woff'),
+  url('./files/fonts/IstokWebItalic/IstokWeb-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Open Sans Bold';
   src: url('./files/fonts/OpenSansBold/OpenSans-Bold.eot');
   src: url('./files/fonts/OpenSansBold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),

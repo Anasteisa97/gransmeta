@@ -378,9 +378,144 @@
 .packages-form{
 
   position: static;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .def-form__text{
     font-size: 26px;
+  }
+}
+
+#requests{
+
+  .container{
+    max-width: 1440px;
+  }
+}
+
+.requests{
+  padding-top: 120px;
+
+  &-wrapper{
+    width: 100%;
+    background-size: cover;
+    height: 590px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    .requests-slider{
+      width: 1140px;
+      margin: auto;
+      //padding-left: 10px;
+
+      .carousel__item{
+        width: 360px;
+        height: 470px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        margin: 0;
+
+        .owl-carousel, .owl-theme, .owl-loaded, .owl-drag{
+          position: relative;
+        }
+
+
+        img{
+          width: 125px;
+          margin-bottom: 30px;
+        }
+
+        &-name-company{
+          margin: 0 30px 40px;
+          font-size: 22px;
+          text-align: center;
+          font-family: 'Myriad Pro Regular';
+        }
+
+        &-citation{
+          width: 260px;
+          padding-left: 15px;
+          border-left: #f8484f solid 2px;
+          font-family: 'Istok Web Italic';
+          font-size: 16px;
+          position: relative;
+          margin-bottom: 50px;
+
+          &:before{
+            position: absolute;
+            display: inline-block;
+            content: ",,";
+            left: -39px;
+            top: 11px;
+            color: #f8484f;
+            font-size: 60px;
+            font-family: 'Source Sans Pro Regular';
+            transform: rotate(180deg);
+          }
+        }
+
+        .btn-requests{
+
+          width: 260px;
+
+          &:hover{
+            background: #417bd1;
+          }
+
+          &:active{
+            background: #0c3b81;
+          }
+        }
+      }
+
+      .owl-item .active .center{
+
+        width: 500px;
+
+        .carousel__item{
+          width: 100px;
+        }
+      }
+
+      .owl-nav {
+        width: 1255px;
+        transform: translateX(-67px);
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: calc(50% - 25px);
+
+        .owl-prev, .owl-next{
+          width: 40px;
+          height: 40px;
+          background-image: url('./files/imgs/slider-arrow-right.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: .6;
+          outline: none;
+          transition: .5s;
+
+          &:hover{
+            opacity: 1;
+          }
+
+          span{
+            display: none;
+          }
+        }
+
+        .owl-prev{
+          transform: scale(-1, 1)
+        }
+      }
+    }
   }
 }
 

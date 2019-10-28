@@ -34,10 +34,10 @@
 
         <div class="col-lg-6 header-right">
           <!--ТЕЛЕФОНЫ И МЫЛО ДЕЛАЮТСЯ ССЫЛКАМИ tel:+78412516161-->
-            <div class="phone">
+            <a href="tel:+78412516161" class="phone">
               <img src="files/imgs/icons/phone.png" alt="" class="nav__icon">
               <p class="phone__text">8 (8412) 51-61-61</p>
-            </div>
+            </a>
             <div class="address">
                 <img src="files/imgs/icons/address.png" alt="" class="nav__icon">
                 <div class="address__text">
@@ -89,7 +89,9 @@
           <a class="btn" href="#">Отправить заявку</a>
         </form>
         <div class="def-form__checkbox">
-          <p><input type="checkbox" name="option1" value="a1" class="def-form__check" checked>Я согласен на обработку персональных данных</p>
+          <p><input type="checkbox" name="option1" value="a1" class="def-form__check" id="option1" checked>
+            <label for="option1" style="background: #007dff"></label>
+            Я согласен на обработку персональных данных</p>
         </div>
       </div>
     </div>
