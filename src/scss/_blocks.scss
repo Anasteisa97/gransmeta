@@ -94,8 +94,13 @@
     margin: 0 auto;
     margin-top: 32px;
 
+    .btn{
+
+      width: 30%;
+    }
+
     &-field{
-      width: 265px;
+      width: 30%;
       height: 37px;
       background: transparent;
       font-size: 19px;

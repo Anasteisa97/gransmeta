@@ -23,6 +23,17 @@ $(document).ready(function () {
     $('.form-call').fadeOut();
   });
 
+  $('.btn.btn-requests').on('click', function (e) {
+    event.preventDefault(e);
+    $('.request-scan').fadeIn();
+  });
+
+  $('.request-scan__back, .request-scan__close').on('click', function () {
+    $('.request-scan').fadeOut();
+  });
+
+
+
   $("#owl-carousel-1").owlCarousel({
 
     loop: true,
@@ -38,7 +49,7 @@ $(document).ready(function () {
       0:{
         items:1
       },
-      750:{
+      768:{
         items:3
       },
     }
