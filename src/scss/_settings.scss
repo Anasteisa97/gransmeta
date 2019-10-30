@@ -81,6 +81,7 @@ $def-color: #363B6A;
 }
 
 body{
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   background-color: #e8eef5;

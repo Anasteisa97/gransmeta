@@ -26,11 +26,13 @@
 
   .nav{
 
+    padding: 0 10px;
+
     &__item{
       margin-right: 67px;
       font-size: 22px;
       text-transform: uppercase;
-      font-family: 'Myriad Pro Regular';
+      font-family: 'Open Sans Regular';
       position: relative;
       display: flex;
       justify-content: center;
