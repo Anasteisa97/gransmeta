@@ -10,9 +10,14 @@ $(document).ready(function () {
     //$(this).toggleClass('how-choose__item-box_after');
     // $('.how-choose__item-box_after').toggleClass('how-choose__item-box_after_click');
     //$('.how-choose__item-box:before').css('background','#f8484f');
-
   });
 
+  $('.header-inner__top-close').on('click', function (e) {
+    $('.header-top').fadeIn();
+  });
+  $('.header-top__close').on('click', function () {
+    $('.header-top').fadeOut();
+  });
 
   $('.btn.btn-packages').on('click', function (e) {
     event.preventDefault(e);

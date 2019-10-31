@@ -263,6 +263,8 @@
 
       &-text{
 
+        max-width: 100%;
+
         &.blue{
           color: #007dff;
           font-family: 'Open Sans Semibold';
@@ -405,12 +407,10 @@
     align-items: center;
 
     .requests-slider{
-      //width: 1160px;
       width: 1100px;
       margin: auto;
 
       .carousel__item{
-        //width: 360px;
         width: 345px;
         height: 470px;
         background: white;
@@ -419,7 +419,6 @@
         align-items: center;
         flex-direction: column;
         margin: auto;
-        //margin: 0;
 
         .owl-carousel, .owl-theme, .owl-loaded, .owl-drag{
           position: relative;
@@ -431,6 +430,7 @@
         }
 
         &-name-company{
+          width: 100%;
           margin: 0 30px 40px;
           font-size: 22px;
           text-align: center;

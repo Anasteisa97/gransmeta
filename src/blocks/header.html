@@ -6,7 +6,12 @@
 
       <div class="row">
         <!--НЕ ИСПОЛЬЗОВАТЬ КЛАССЫ ДЛЯ БУТРСАП СТИЛЕЙ, КОГДА ЭТО ВОЗМОЖНО, СЕМАНТИЧЕСКИЙ ТЕГ NAV-->
-        <nav class="col-xl-6 col-md-7 nav align-items-center">
+
+        <div class="header-top__close">
+          <span></span>
+        </div>
+
+        <nav class="col-xl-6 col-md-8 nav align-items-center">
 
           <!--CMS ВЫВОДЯТ МЕН. ПО-ДРУГОМУ-->
 
@@ -32,7 +37,7 @@
 
         </nav>
 
-        <div class="col-xl-6 col-md-5 header-right">
+        <div class="col-xl-6 col-md-4 header-right">
           <!--ТЕЛЕФОНЫ И МЫЛО ДЕЛАЮТСЯ ССЫЛКАМИ tel:+78412516161-->
             <a href="tel:+78412516161" class="phone">
               <img src="files/imgs/icons/phone.png" alt="" class="nav__icon">
@@ -55,13 +60,16 @@
   </div>
 
 <!--НЕ ЗАБУДЬ ПРО ЛОГИЧНЫЕ КЛАССЫ ДЛЯ БЛОКОВ ИННЕР - ЭТО НЕ ГОВОРЯЩИЙ КЛАСС -->
-  <div class="header-inner header-bot">
+  <div class="header-inner">
 
     <!--ЛУЧШЕ СЛЕДОВАТЬ ОДНОЙ СТРУКТУРЕ-->
 
     <div class="container">
 
       <div class="row header-inner__top">
+
+        <div class="header-inner__top-close">
+        </div>
 
         <div class="col-xl-6 col-md-6 header-inner__logo">
           <img src="files/imgs/inner-logo.png" alt="">
@@ -90,7 +98,6 @@
         </form>
         <div class="def-form__checkbox">
           <p><input type="checkbox" name="option1" value="a1" class="def-form__check" id="option1" checked>
-            <label for="option1" style="background: #007dff"></label>
             Я согласен на обработку персональных данных</p>
         </div>
       </div>
