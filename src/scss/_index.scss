@@ -420,9 +420,9 @@
         flex-direction: column;
         margin: auto;
 
-        .owl-carousel, .owl-theme, .owl-loaded, .owl-drag{
+       /* .owl-carousel, .owl-theme, .owl-loaded, .owl-drag{
           position: relative;
-        }
+        }*/
 
         img{
           width: 125px;
@@ -478,17 +478,13 @@
         transition: .5s;
 
         .carousel__item{
-          //width: 390px;
           width: 100%;
           margin: auto;
           height: 510px;
-        }
-      }
 
-      .owl-item.cloned{
-
-        &:last-child{
-          display: none;
+          img{
+            width: 140px;
+          }
         }
       }
 

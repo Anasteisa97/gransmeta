@@ -14,11 +14,17 @@
   color: #ffffff;
   border-radius: 0;
   cursor: pointer;
+  outline: none;
+
+  &:active{
+    outline: none;
+  }
 
 }
 
 .btn:hover{
   color: #ffffff;
+  outline: none;
 }
 
 .section-title{
@@ -108,6 +114,7 @@
       border: 2px solid white;
       padding-left: 15px;
       color: white;
+      outline: none;
 
       //ЭТО ПСЕВДОЭЛЕМЕНТ
       &::placeholder{
@@ -130,22 +137,55 @@
     margin-left: 93px;
     margin-top: 20px;
 
-    p{
-      color: white;
-      font-size: 16px;
-      font-family: 'Open Sans Regular';
+    label{
+      margin-bottom: 0;
+      cursor: pointer;
 
-      input{
-        margin-right: 8px;
-        width: 16px;
-        height: 16px;
+      span{
+        color: white;
+        font-size: 16px;
+        font-family: 'Open Sans Regular';
+        position: relative;
+        padding-left: 40px;
 
-        .def-form__check{
+        &::before{
+          display: block;
+          content: '';
+          width: 16px;
+          height: 16px;
+          background-color: #ffffff;
+          position: absolute;
+          left: 10px;
+          top: 0;
+        }
+
+        &::after{
+          display: none;
+          content: '';
+          width: 16px;
+          height: 16px;
+          background-image: url('./files/imgs/icons/check.png');
+          position: absolute;
+          left: 10px;
+          top: 0;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
         }
       }
 
-      label{
+      input{
+        display: none;
+
       }
+
+      &.on{
+
+        span::after{
+          display: block;
+        }
+      }
+
     }
   }
 

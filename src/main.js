@@ -2,6 +2,37 @@ $(document).ready(function () {
 
   console.log('YEP');
 
+  /*fix header*/
+
+  var header = $("#header-top"),
+    introH = $("#headering").innerHeight(),
+    scroll = 0;
+
+
+  $(window).on("scroll", function(){
+
+
+    scroll = $(this).scrollTop();
+    if(scroll >= introH)
+      header.addClass("fixed");
+    else header.removeClass("fixed");
+
+  });
+
+  /*smooth scroll*/
+
+  $("[data-scroll]").on("click", function(event) {
+    event.preventDefault();
+
+    var blockId = $(this).data('scroll'),
+      blockOffset = $(blockId).offset().top;
+
+    $("html, body").animate({
+      scrollTop: blockOffset
+    });
+
+  });
+
   $('.how-choose__item-box').on('click', function(e) {
     event.preventDefault(e);
 
@@ -65,9 +96,27 @@ $(document).ready(function () {
     loop: true,
     nav: true,
     dots: false,
-    //center: true,
-    items:1
+    items:1,
+    responsive:{
+      0:{
+        nav: false
+      },
+      768:{
+        nav: true
+      },
+    }
   });
+
+
+//  FORM ON
+
+  $('.def-form label input').on('click', function () {
+
+    $(this).closest('label').toggleClass('on');
+
+  });
+
+//  FORM OFF
 
 
 });

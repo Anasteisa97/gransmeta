@@ -12,6 +12,13 @@
 .header{
 
   &-top{
+
+    &.fixed{
+      position: fixed;
+      background: white;
+      z-index: 14;
+    }
+
     height: 107px;
     display: flex;
     align-items: center;
@@ -26,7 +33,7 @@
 
   .nav{
 
-    padding: 0 10px;
+    padding: 0 20px;
 
     &__item{
       margin-right: 67px;
@@ -54,6 +61,7 @@
       &-link{
 
         padding-bottom: 9px;
+        letter-spacing: 1px;
 
         &::after {
           content: "";
@@ -89,8 +97,10 @@
     display: flex;
     align-items: center;
     width: 50%;
+
     &__text{
       font-size: 22px;
+      letter-spacing: 2px;
     }
   }
 
@@ -105,13 +115,17 @@
         font-size: 18px;
         color: #f8484f;
         font-family: 'Open Sans Regular';
-        border-bottom: 2px dashed #f8484f;
+        border-bottom: 1px dashed #f8484f;
         line-height: 1.5;
+        letter-spacing: 1px;
+        display: inline-block;
+        margin-bottom: 3px;
 
       }
       &_bottom{
         font-size: 21px;
         font-family: 'Open Sans Regular';
+        letter-spacing: 1px;
 
       }
     }
@@ -120,6 +134,8 @@
   &-right{
     display: flex;
     align-items: center;
+    padding-left: 0;
+    padding-right: 10px;
   }
 
   &-inner{
@@ -148,9 +164,9 @@
 
       &-item{
         font-size: 60px;
-        //font-family: 'Myriad Pro Regular';
         color: #125ac6;
         font-family: 'Open Sans Bold';
+        letter-spacing: 2px;
 
         &_size_s{
           font-family: 'Open Sans Semibold';
