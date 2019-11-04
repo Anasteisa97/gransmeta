@@ -250,6 +250,14 @@ $(document).ready(function () {
     sync2.on("click", ".owl-item", function (e) {
         e.preventDefault();
         var number = $(this).index();
+
+        if(number < 4) {
+            number += 4;
+        }
+        if(number >= 4) {
+            number -= 4;
+        }
+
         sync1.data('owl.carousel').to(number, 300, true);
     });
 
