@@ -182,12 +182,16 @@
 
         &:last-child{
         }
+
+
       }
 
       &-field[placeholder="Комментарий"]{
         height: 105px;
 
         &::placeholder{
+          //height: 100%;
+          //display: contents;
         }
       }
     }

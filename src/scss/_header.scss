@@ -35,8 +35,12 @@
 
     padding: 0 20px;
 
-    &__item{
+    li{
       margin-right: 67px;
+    }
+
+    &__item{
+      //margin-right: 67px;
       font-size: 22px;
       text-transform: uppercase;
       font-family: 'Open Sans Regular';
@@ -125,7 +129,7 @@
       &_bottom{
         font-size: 21px;
         font-family: 'Open Sans Regular';
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
 
       }
     }

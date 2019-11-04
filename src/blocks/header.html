@@ -15,25 +15,32 @@
 
           <!--CMS ВЫВОДЯТ МЕН. ПО-ДРУГОМУ-->
 
-          <a href="#headering" data-scroll="#headering" class="nav__item">
-            <img src="files/imgs/icons/home.png" alt="" class="nav__item-icon">
-            <p class="nav__item-link">Главная</p>
-          </a>
-
-          <a href="#packages" data-scroll="#packages" class="nav__item">
-            <img src="files/imgs/icons/prices.png" alt="" class="nav__item-icon">
-            <p class="nav__item-link" data-scroll="#service">Цены</p>
-          </a>
-
-          <a href="#requests" data-scroll="#requests" class="nav__item">
-            <img src="files/imgs/icons/requests.png" alt="" class="nav__item-icon">
-            <p class="nav__item-link" data-scroll="#design">Отзывы</p>
-          </a>
-
-          <a href="#how-find" data-scroll="#how-find" class="nav__item">
-            <img src="files/imgs/icons/contacts.png" alt="" class="nav__item-icon">
-            <p class="nav__item-link" data-scroll="#work">Контакты</p>
-          </a>
+          <ul>
+            <li>
+              <a href="#headering" data-scroll="#headering" class="nav__item">
+                <img src="files/imgs/icons/home.png" alt="" class="nav__item-icon">
+                <p class="nav__item-link">Главная</p>
+              </a>
+            </li>
+            <li>
+              <a href="#packages" data-scroll="#packages" class="nav__item">
+                <img src="files/imgs/icons/prices.png" alt="" class="nav__item-icon">
+                <p class="nav__item-link" data-scroll="#service">Цены</p>
+              </a>
+            </li>
+            <li>
+              <a href="#requests" data-scroll="#requests" class="nav__item">
+                <img src="files/imgs/icons/requests.png" alt="" class="nav__item-icon">
+                <p class="nav__item-link" data-scroll="#design">Отзывы</p>
+              </a>
+            </li>
+            <li>
+              <a href="#how-find" data-scroll="#how-find" class="nav__item">
+                <img src="files/imgs/icons/contacts.png" alt="" class="nav__item-icon">
+                <p class="nav__item-link" data-scroll="#work">Контакты</p>
+              </a>
+            </li>
+          </ul>
 
         </nav>
 
@@ -93,7 +100,7 @@
         <p class="def-form__text">Узнайте предварительную стоимость услуг по телефону. Введите контактный телефон и наш менеджер свяжется с Вами.</p>
         <form action="#" class="def-form__input">
           <input type="email" placeholder="Ваше имя" class="def-form__input-field" required>
-          <input type="email" placeholder="Телефон" class="def-form__input-field" required>
+          <input type="tel" placeholder="Телефон" class="def-form__input-field" id="phone1" required>
           <a class="btn" href="#">Отправить заявку</a>
         </form>
         <div class="def-form__checkbox">
