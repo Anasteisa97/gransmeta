@@ -30,7 +30,7 @@ $(document).ready(function () {
             scrollTop: blockOffset
         });
 
-    })
+    });
 
     /*how-choose item click*/
 

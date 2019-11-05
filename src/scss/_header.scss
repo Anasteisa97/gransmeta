@@ -37,6 +37,10 @@
 
     li{
       margin-right: 67px;
+
+      &:last-child{
+        margin-right: 0;
+      }
     }
 
     &__item{

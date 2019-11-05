@@ -2,7 +2,11 @@
   width: 265px;
   height: 37px;
   background-color: #125ac6;
-  display: block;
+  //display: block;
+  /*Мини хакуля*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
   content: "";
   vertical-align: center;
   font-family: 'Open Sans Regular';
