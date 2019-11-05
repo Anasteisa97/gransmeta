@@ -136,6 +136,8 @@ $(document).ready(function () {
         }
     });
 
+    //////////////// из codepen//////////////
+
 
     var sync1 = $("#sync1");
     var sync2 = $("#sync2");
@@ -260,6 +262,140 @@ $(document).ready(function () {
 
         sync1.data('owl.carousel').to(number, 300, true);
     });
+
+    ///////////////////////////////////////////////////////////////////////////
+
+
+  $('.btn.btn-requests-two').on('click', function (e) {
+    event.preventDefault(e);
+    $('.request-scan-two').fadeIn();
+  });
+
+  $('.request-scan-two__back, .request-scan-two__close').on('click', function () {
+    $('.request-scan-two').fadeOut();
+  });
+
+  var sync_one = $("#owl-carousel-one");
+  var sync_two = $("#owl-carousel-two");
+  var slidesPerPage = 3; //globaly define number of elements per page
+  var syncedSecondary = true;
+
+  sync_one.owlCarousel({
+
+    slideSpeed: 2000,
+    nav: true,
+    //autoplay: true,
+    dots: true,
+    loop: true,
+    responsiveRefreshRate: 200,
+
+    center: true,
+    /*autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,*/
+    slideBy: 2,
+    stagePadding: 0,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 3
+      },
+    }
+  }).on('changed.owl.carousel', syncPositionOne);
+
+  sync_two
+    .on('initialized.owl.carousel', function () {
+      sync_two.find(".owl-item").eq(4).addClass("current");
+    })
+    .owlCarousel({
+
+      center: true,
+      nav: true,
+      loop: true,
+      smartSpeed: 200,
+      slideSpeed: 500,
+      slideBy: 2, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+      responsiveRefreshRate: 100,
+
+    dots: false,
+    items: 1,
+    responsive: {
+      0: {
+        nav: false
+      },
+      768: {
+        nav: true
+      },
+    }
+  }).on('changed.owl.carousel', syncPositionTwo);
+
+  function syncPositionOne(el) {
+    //if you set loop to false, you have to restore this next line
+
+    var currentfrom = el.item.index;
+
+    if (currentfrom >= 4) {
+      current = currentfrom - 4;
+    }
+    if (currentfrom < 4) {
+      current = currentfrom + 4;
+    }
+
+    //end block
+
+    sync_two
+      .find(".owl-item")
+      .removeClass("current")
+      .eq(current)
+      .addClass("current");
+
+    sync_two.data('owl.carousel').to(current, 100, true);
+
+  }
+
+  function syncPositionTwo(el) {
+    if (syncedSecondary) {
+      var number;
+      if(el.item.index < 4) {
+        number = el.item.index + 4;
+      }
+      if(el.item.index >= 4) {
+        number = el.item.index - 4;
+      }
+      //var number = el.item.index;
+      sync_one.data('owl.carousel').to(number, 100, true);
+    }
+  }
+
+/*  sync_two.on("click", ".owl-item", function (e) {
+    e.preventDefault();
+    var number = $(this).index();
+
+    if(number < 4) {
+      number += 4;
+    }
+    if(number >= 4) {
+      number -= 4;
+    }
+
+    sync_one.data('owl.carousel').to(number, 300, true);
+  });*/
+
+  sync_two.on("click", ".owl-item", function (e) {
+    e.preventDefault();
+    var number = $(this).index();
+
+    if(number < 4) {
+      number += 4;
+    }
+    if(number >= 4) {
+      number -= 4;
+    }
+
+    sync_one.data('owl.carousel').to(number, 300, true);
+  });
 
 
 });

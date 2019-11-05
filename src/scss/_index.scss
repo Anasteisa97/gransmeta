@@ -419,6 +419,7 @@
         align-items: center;
         flex-direction: column;
         margin: auto;
+        cursor: grab;
 
        /* .owl-carousel, .owl-theme, .owl-loaded, .owl-drag{
           position: relative;
@@ -492,17 +493,17 @@
 
         display: flex;
         align-items: center;
+        z-index: 1;
       }
 
       .owl-nav {
+        z-index: -1;
         width: 1182px;
         left: -42px;
-        //transform: translateX(-53px);
         display: flex;
         justify-content: space-between;
         position: absolute;
         right: 0;
-        //left: 0;
         top: calc(50% - 25px);
 
         .owl-prev, .owl-next{
