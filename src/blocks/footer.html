@@ -57,12 +57,18 @@
       </div>
 
       <form action="#" class="def-form__input">
-        <input type="email" placeholder="Ваше имя" class="def-form__input-field" required>
-        <input type="email" placeholder="Телефон" class="def-form__input-field" required>
-        <input type="email" placeholder="Комментарий" class="def-form__input-field" required>
+        <input type="hidden" class="packages-form-title">
+        <input type="text" placeholder="Ваше имя" class="def-form__input-field" required>
+        <input type="tel" placeholder="Телефон" class="def-form__input-field" required>
+        <input type="text" placeholder="Комментарий" class="def-form__input-field" required>
         <p class="def-form__text bgc-dark">Нажимая «Отправить», Вы соглашаетесь<br>
           с Политикой обработки персональных данных.</p>
+<!--
         <a class="btn" href="#">Отправить заявку</a>
+-->
+
+        <input class="btn" type="submit" value="Отправить заявку">
+
       </form>
     </div>
   </div>

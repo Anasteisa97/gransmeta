@@ -57,8 +57,14 @@ $(document).ready(function () {
 
     $('.btn.btn-packages').on('click', function (e) {
         event.preventDefault(e);
+        var titleAtr = $(this).closest('.packages-item').find('.packages-item__title').text();
+        console.log(titleAtr);
+        $(".packages-form-title").val(titleAtr);
         $('.form-call').fadeIn();
     });
+
+
+
 
     $('.def-form__back, .def-form__close').on('click', function () {
         $('.form-call').fadeOut();
@@ -287,7 +293,7 @@ $(document).ready(function () {
     //autoplay: true,
     dots: true,
     loop: true,
-    responsiveRefreshRate: 200,
+    //responsiveRefreshRate: 200,
 
     center: true,
     /*autoplay: true,
@@ -314,10 +320,10 @@ $(document).ready(function () {
       center: true,
       nav: true,
       loop: true,
-      smartSpeed: 200,
-      slideSpeed: 500,
+      //smartSpeed: 200,
+      //slideSpeed: 500,
       slideBy: 2, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
-      responsiveRefreshRate: 100,
+      //responsiveRefreshRate: 100,
 
     dots: false,
     items: 1,
@@ -369,20 +375,6 @@ $(document).ready(function () {
     }
   }
 
-/*  sync_two.on("click", ".owl-item", function (e) {
-    e.preventDefault();
-    var number = $(this).index();
-
-    if(number < 4) {
-      number += 4;
-    }
-    if(number >= 4) {
-      number -= 4;
-    }
-
-    sync_one.data('owl.carousel').to(number, 300, true);
-  });*/
-
   sync_two.on("click", ".owl-item", function (e) {
     e.preventDefault();
     var number = $(this).index();
@@ -396,6 +388,16 @@ $(document).ready(function () {
 
     sync_one.data('owl.carousel').to(number, 300, true);
   });
+
+  /*button packages find title*/
+/*
+  $('.btn-packages').on('click', function (e) {
+    event.preventDefault(e);
+
+    var titleAtr = $(this).closest('.packages-item').find('.packages-item__title').text();
+    console.log(titleAtr);
+    $(".packages-form-title").val(titleAtr);
+  });*/
 
 
 });
