@@ -389,15 +389,32 @@ $(document).ready(function () {
     sync_one.data('owl.carousel').to(number, 300, true);
   });
 
-  /*button packages find title*/
-/*
-  $('.btn-packages').on('click', function (e) {
-    event.preventDefault(e);
+  $('.your-class').slick({
+      infinite: true,
+      //arrows: false,
 
-    var titleAtr = $(this).closest('.packages-item').find('.packages-item__title').text();
-    console.log(titleAtr);
-    $(".packages-form-title").val(titleAtr);
-  });*/
+      slidesToShow: 3,
+      slidesToScroll: 2,
+      centerMode: true,
+      centerPadding: '60px',
+      variableWidth: true,
+      responsive: [
+          {
+              breakpoint: 0,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+              }
+          },
+          {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2
+              }
+          },
+      ]
 
+  });
 
 });
