@@ -418,8 +418,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        //margin: auto;  //было
-        //margin: auto 10px;
+        position: relative;
         margin: 20px 10px 0;
         right: 10px;
         cursor: grab;
@@ -463,6 +462,8 @@
         .btn-requests{
 
           width: 260px;
+          position: absolute;
+          bottom: 20px;
 
           &:hover{
             background: #417bd1;

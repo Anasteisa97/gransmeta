@@ -8,15 +8,27 @@ $(document).ready(function () {
         introH = $("#headering").innerHeight(),
         scroll = 0;
 
+    var wWindow = $(window).width();
 
     $(window).on("scroll", function () {
 
         scroll = $(this).scrollTop();
-        if (scroll >= introH)
+        if (scroll >= introH && wWindow >= 768)
             header.addClass("fixed");
         else header.removeClass("fixed");
 
     });
+
+
+    if (wWindow < 768) {
+
+      $('.header-top a').on('click', function () {
+
+        $('.header-top').fadeOut();
+
+      });
+
+    }
 
     /*smooth scroll*/
 
@@ -391,14 +403,13 @@ $(document).ready(function () {
 
   $('.your-class').slick({
       infinite: true,
-      //arrows: false,
-
       slidesToShow: 3,
       slidesToScroll: 2,
       centerMode: true,
-      centerPadding: '60px',
       variableWidth: true,
-      responsive: [
+    asNavFor: '.my-class',
+
+    responsive: [
           {
               breakpoint: 0,
               settings: {
@@ -416,5 +427,33 @@ $(document).ready(function () {
       ]
 
   });
+
+  $('.my-class').slick({
+    infinite: true,
+
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    //variableWidth: true,
+    asNavFor: '.your-class',
+    focusOnSelect: true,
+
+
+    responsive: [
+      {
+        breakpoint: 0,
+        settings: {
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+        }
+      },
+    ]
+
+  });
+
 
 });
