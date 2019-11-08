@@ -115,7 +115,7 @@
   .address{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 54%;
 
     &__text{
 
@@ -168,17 +168,17 @@
 
     &__text{
 
-      //width: 520px;
-
       &-item{
         font-size: 60px;
         color: #125ac6;
         font-family: 'Open Sans Bold';
-        letter-spacing: 2px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
 
         &_size_s{
           font-family: 'Open Sans Semibold';
           font-size: 30px;
+          padding-bottom: 0;
         }
       }
     }

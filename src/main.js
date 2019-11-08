@@ -5,6 +5,7 @@ $(document).ready(function () {
     /*fix header*/
 
     var header = $("#header-top"),
+        burger = $(".header-inner__top-burger"),
         introH = $("#headering").innerHeight(),
         scroll = 0;
 
@@ -13,9 +14,19 @@ $(document).ready(function () {
     $(window).on("scroll", function () {
 
         scroll = $(this).scrollTop();
-        if (scroll >= introH && wWindow >= 768)
-            header.addClass("fixed");
-        else header.removeClass("fixed");
+        if (scroll >= introH && wWindow >= 768) {
+            header.addClass("fixed");}
+        else {
+          header.removeClass("fixed");
+        }
+
+      if (scroll >= introH && wWindow < 768) {
+        burger.addClass("fixed");
+        burger.css("padding-left", "15px");}
+      else {
+        burger.removeClass("fixed");
+        burger.css("padding-left", "0");
+    }
 
     });
 
@@ -25,6 +36,8 @@ $(document).ready(function () {
       $('.header-top a').on('click', function () {
 
         $('.header-top').fadeOut();
+
+        $('.header-inner__top-burger').fadeIn();
 
       });
 
@@ -49,20 +62,32 @@ $(document).ready(function () {
     $('.how-choose__item-box').on('click', function (e) {
         event.preventDefault(e);
 
-        $(this).closest('.how-choose__item').find('.how-choose__item-box_after').toggleClass('how-choose__item-box_after_click');
+      //$('.how-choose__item-box_after_click').fadeOut();
 
-        //$(this).toggleClass('how-choose__item-box_after');
-        // $('.how-choose__item-box_after').toggleClass('how-choose__item-box_after_click');
-        //$('.how-choose__item-box:before').css('background','#f8484f');
+      //$(this).closest('.how-choose__item').find('.how-choose__item-box_after').addClass('how-choose__item-box_after_click');
+
+      $('.how-choose__item-box_after_click').removeClass('how-choose__item-box_after_click');
+
+      var howChoose_boxAfter = $(this).closest('.how-choose__item').find('.how-choose__item-box_after');
+      howChoose_boxAfter.addClass('how-choose__item-box_after_click');
+
+
     });
 
     /*header top mobile*/
 
-    $('.header-inner__top-close').on('click', function (e) {
+    $('.header-inner__top-burger').on('click', function (e) {
         $('.header-top').fadeIn();
+
+        $('.header-inner__top-burger').fadeOut();
     });
+
+
     $('.header-top__close').on('click', function () {
         $('.header-top').fadeOut();
+
+        $('.header-inner__top-burger').fadeIn();
+
     });
 
     /*packages form-call*/
